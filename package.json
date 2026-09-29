@@ -1,0 +1,45 @@
+{
+  "name": "typescript-playground-fundacion-luckia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playground para practicar TypeScript en el curso Front End Moderno y Herramientas IA de Lemoncode",
+  "type": "module",
+  "scripts": {
+    "prestart": "npm run transpile && npm run copy",
+    "start": "concurrently \"npm:transpile -- --watch\" npm:devserver",
+    "copy": "copyfiles --flat src/**/*.{html,css,svg} dist",
+    "transpile": "tsc --pretty",
+    "devserver": "browser-sync start -c bs-config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemoncode/typescript-playground-fundacion-luckia.git"
+  },
+  "keywords": [
+    "lemoncode",
+    "frontend",
+    "course",
+    "typescript",
+    "playground",
+    "fundacion-luckia"
+  ],
+  "author": "Lemoncode",
+  "contributors": [
+    {
+      "email": "santi.camargo@lemoncode.net",
+      "name": "Santiago Camargo Rodríguez",
+      "url": "https://github.com/crsanti"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lemoncode/typescript-playground-fundacion-luckia/issues"
+  },
+  "homepage": "https://github.com/Lemoncode/typescript-playground-fundacion-luckia#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5",
+    "native-copyfiles": "^2.0.4",
+    "typescript": "^7.0.2"
+  }
+}
