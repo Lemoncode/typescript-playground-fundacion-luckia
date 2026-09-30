@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Playground para practicar TypeScript en el curso Front End Moderno y Herramientas IA de Lemoncode" />
+    <title>TypeScript Playground | Lemoncode</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script type="module" src="playground.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="https://lemoncode.net" target="_blank" rel="noopener noreferrer">
+        <img src="logo.svg" alt="" width="45" height="30" />
+        <span>Lemoncode</span>
+      </a>
+      <span class="badge">TS Playground</span>
+    </header>
+
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">&lt; Playground /&gt;</p>
+        <h1 id="hero-title" class="section-title">
+          <span>Juega con</span>
+          <span><mark>TypeScript</mark></span>
+          <span>aquí.</span>
+        </h1>
+        <p class="lead">Front End Moderno y Herramientas IA · Lemoncode &amp; Fundación Luckia</p>
+      </section>
+
+      <ol class="card-grid">
+        <li>
+          <article class="card card--light">
+            <header><span>Qué es</span><span>01</span></header>
+            <h2>Una página de pruebas</h2>
+            <p>
+              Esta página solo sirve para ejecutar fragmentos de código TypeScript y ver cómo
+              interactúan con la consola.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="card card--yellow">
+            <header><span>Resultado</span><span>02</span></header>
+            <h2>Revisa la consola</h2>
+            <p>Abre las herramientas de desarrollo del navegador para ver lo que muestra tu código.</p>
+            <p class="card__cta">Pulsa <kbd>F12</kbd></p>
+          </article>
+        </li>
+        <li>
+          <article class="card card--dark">
+            <header><span>Código</span><span>03</span></header>
+            <h2>Edita y guarda</h2>
+            <p>
+              Escribe tu código en <code>src/playground.ts</code>. La página se recarga
+              automáticamente con cada cambio.
+            </p>
+            <p class="card__cta"><code>npm start</code></p>
+          </article>
+        </li>
+      </ol>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Lemoncode · Front End Moderno y Herramientas IA</p>
+    </footer>
+  </body>
+</html>
